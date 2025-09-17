@@ -11,7 +11,7 @@ public class tugasAlproPekan2 {
 		boolean StatusStokJenisKendaraan ;  /* true = stok ada, false = stok habis */
 		
 		Scanner myInput = new Scanner(System.in);
-		
+		 
 		System.out.println("Masukkan Jumlah Stok Kendaraan Roda2 ");
 		JumlahStokKendaraanRoda2 = myInput.nextInt();
 		System.out.println("Masukkan Harga Kendaraan");
