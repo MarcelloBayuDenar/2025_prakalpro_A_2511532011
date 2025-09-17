@@ -1,5 +1,6 @@
 package pekan2;
 
+//Pratikum2 tentang ContohChar
 public class ContohChar {
 	public static void main(String[] args) {
 //		Deklarasi Variabel Char

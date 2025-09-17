@@ -1,5 +1,6 @@
 package pekan2;
 
+//Pratikum2 tentang KelilingLingkaran
 public class KelilingLingkaran {
 	public static void main(String[] args) {
 		final double Pi = 3.14; /* Definisi Konstanta */

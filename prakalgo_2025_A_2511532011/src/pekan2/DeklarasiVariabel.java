@@ -1,5 +1,6 @@
 package pekan2;
 
+// Pratikum2 tentang DeklarasiVariabel
 public class DeklarasiVariabel {
 	/* program java
 	 * latihan
