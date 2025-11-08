@@ -9,6 +9,8 @@ public class TugasPekan6_2511532011 {
 		Random acak = new Random();
 		int tries = 0;
 		boolean berjalan = true;
+		
+		System.out.println("Permainan Lempar dadu ( permainan akan berhenti jika penjumlahan 2 dadu nilainya = 7 ) ");
 	
 		 while(berjalan) {
 			tries++;
@@ -18,7 +20,7 @@ public class TugasPekan6_2511532011 {
 				break;
 			} else if ( hasil == 2) {
 				System.out.println("Anda Gagal Menang");
-				berjalan = false;
+				break;
 			} 
 		}
 		 input.close();
@@ -27,8 +29,8 @@ public class TugasPekan6_2511532011 {
 	public static int play (Scanner input, Random acak) {
 		String jawab;
 		int guess;
-		int op1 = acak.nextInt(6) + 1;
-		int op2 = acak.nextInt(6) + 1;
+		int op1 = acak.nextInt(4) + 2;
+		int op2 = acak.nextInt(4) + 2;
 		int jmlh = op1 + op2;
 		
 		System.out.print(op1 + " + " + op2 + " = ");
@@ -36,20 +38,24 @@ public class TugasPekan6_2511532011 {
 		guess = input.nextInt();
 		input.nextLine();
 		
-		if (guess == jmlh) {
+		
+		if (guess == 7 ) {
 			System.out.println("Tebakkan Anda Benar");
 			return 1;
-		} else {
-			System.out.println("Tebakkan Anda salah");
-	    }
-		
+		} else if (guess == jmlh ) {
+			System.out.println("Tebakkan Anda Benar");
+		} else if (guess != jmlh) {
+			System.out.println("Tebakkan Anda Salah");
+		}
+	
 		System.out.print("Apakah Anda Ingin Lempar Dadu (ya / tidak): ");
 		jawab = input.nextLine().trim();
 		
 		if (jawab.equalsIgnoreCase("tidak")) {
 			return 2;
-		} else {
-			return 0;
-		}
+		} 
+		
+		return 0;
+		
   }
 }
