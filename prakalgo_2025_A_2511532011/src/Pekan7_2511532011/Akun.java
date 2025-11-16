@@ -74,10 +74,4 @@ public class Akun {
 		System.out.println("Password Anda \"" + this.getPw() + "\" tidak valid (harus terdiri dari 8 angka atau lebih).");
 		System.out.println("silahkan coba lagi");
 	}
-	
-	public void cetak3() {
-		System.out.println("Email dan Password tidak valid");
-		System.out.println("silahkan coba lagi");
-		
-	}
 }
